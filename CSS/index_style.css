@@ -23,3 +23,10 @@ nav ul li a{
     margin-right: 5px;
 
 }
+body{
+    background-color:beige;
+}
+h1{
+    font-family: stencil;
+    font-weight: bold;
+}

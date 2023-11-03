@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beautiful Recipe Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/c25cabee86.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/index_style.css">
+  <style>
+
+    body {
+      background-color: beige;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: calc(30% - 20px);
+      margin: 10px 0;
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .card-text {
+      color: #555;
+    }
+
+    .btn-primary {
+      background-color: #ff6f61;
+      border: none;
+      color: #fff;
+      border-radius: 20px;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #ed5c4d;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <div class="container mt-3">
+    <div class="navbar text-dark p-2">
+        <nav class="mt-2">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li  class="nav-item"><a href="recipes.html" class="nav-link">Cooking recipes</a></li>
+                <li  class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+            </ul>
+        </nav>
+    </div><br>
+</div>
+
+  <div class="container">
+    <div class="card-container">
+      <div class="card" id="banana">
+        <img src="images/banana on fire.jpg" alt="Fried Banana with Honey" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+        <div class="card-body">
+          <h5 class="card-title">Fried Banana with Honey</h5>
+          <p class="card-text">Indulge in this delicious dessert, perfect for Thanksgiving.</p>
+          <a href="page1.html" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cha.jpg" alt="Taylor Swift Chai Cookies" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+        <div class="card-body">
+          <h5 class="card-title">Cookies</h5>
+          <p class="card-text">These cookies are amazingly delicious, perfect for FALL.</p>
+          <a href="chai.html" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/mac and cheese.jpg" alt="Mac and Cheese" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+        <div class="card-body">
+          <h5 class="card-title">Mac and Cheese</h5>
+          <p class="card-text">Quick and easy to make, creamy Mac and cheese, perfect for a nice family dinner.</p>
+          <a href="mac.html" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/ssss.jpg" alt="Blur blueberry-protein-shake" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+        <div class="card-body">
+          <h5 class="card-title">Blueberry Smoothies</h5>
+          <p class="card-text">This is my own recipe, and it's fantastic. I told you, SEE. 😊</p>
+          <a href="blue.html" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/matcha.jpg" alt="Ice Matcha Latte" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+        <div class="card-body">
+          <h5 class="card-title">Ice Matcha Latte</h5>
+          <p class="card-text">The easiest way to make matcha at home, perfect for any time of the day.</p>
+          <a href="matcha.html" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+
+      <div class="card" id="apple">
+        <img src="images/granola.jpg" alt="Apple Granola" style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+        <div class="card-body">
+          <h5 class="card-title">Apple Granola</h5>
+          <p class="card-text">This is an amazing snack, quick and easy to make, and delicious. Top one in the snack competition! ❤️</p>
+          <a href="apple.html" class="btn btn-primary">Discover More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-0" style="margin-top: 50px;">
+    <div class="row bg-light">
+        <div class="col-md-12 text-center ">
+            <p style="font-size: 30px; font-weight:initial;">Contact us</p>
+            <ul class="nav" style="justify-content: center;">
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-youtube fa-2xl" style="color: red;"></i></a></li>&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-x-twitter fa-2xl" style="color: black;"></i></a></li>&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-square-instagram fa-2xl" style="color: rgb(239, 6, 188);"></i></a></li>&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-telegram fa-2xl"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-whatsapp fa-2xl" style="color: rgb(0, 255, 89);"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </ul>
+           
+        </div>
+        <div class="col" style="float: right;">
+          <button class="button">Log in</button>
+        </div>
+    </div>
+
+<div class="row shadow">
+    <div class="col-md-12 text-center bg-light text-dark-50 p-3">
+       
+        <span class="shadow">2023 &copy; by EDUSN year-8 Fuchsia student</span>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
